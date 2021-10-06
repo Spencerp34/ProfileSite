@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 // import Carousel from './carousel';
 import pyramidPlanetImg from '../assets/pyramid-merch.PNG'
+import littleAcorns from '../assets/littleAcorns.PNG'
 
 
 const Wrap = styled.div`
@@ -13,6 +14,9 @@ const Wrap = styled.div`
         justify-content: space-evenly;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+    img{
+        border-radius: 15px;
     }
     .website{
         width: 30%;
@@ -38,28 +42,10 @@ function Home(){
                         <img src={pyramidPlanetImg} width='80%' alt='' />
                     </div>
                     <div className='website' >
-                        <h3>Pyramid Planet</h3>
+                        <h3>Little Acorns Pre-School</h3>
                         <p> Check out this website to see: </p>
-                        <p> Interactive UI, Merch Store/Shopping Cart, Single Page Application.</p>
-                        <img src={pyramidPlanetImg} width='80%'  alt='' />
-                    </div>
-                    <div className='website' >
-                        <h3>Pyramid Planet</h3>
-                        <p> Check out this website to see: </p>
-                        <p> Interactive UI, Merch Store/Shopping Cart, Single Page Application.</p>
-                        <img src={pyramidPlanetImg} width='80%'  alt='' />
-                    </div>
-                    <div className='website' >
-                        <h3>Pyramid Planet</h3>
-                        <p> Check out this website to see: </p>
-                        <p> Interactive UI, Merch Store/Shopping Cart, Single Page Application.</p>
-                        <img src={pyramidPlanetImg} width='80%'  alt='' />
-                    </div>
-                    <div className='website' >
-                        <h3>Pyramid Planet</h3>
-                        <p> Check out this website to see: </p>
-                        <p> Interactive UI, Merch Store/Shopping Cart, Single Page Application.</p>
-                        <img src={pyramidPlanetImg} width='80%'  alt='' />
+                        <p> Photo galleries, form inquiries, little business.</p>
+                        <img src={littleAcorns} width='80%' alt='' />
                     </div>
                 </div>
             </Wrap>

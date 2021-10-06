@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(to bottom right, grey, grey, crimson);
+  background-image: linear-gradient(to bottom right, grey, grey, black);
   min-height: 100vh;
   display: flex;
   justify-content: center;

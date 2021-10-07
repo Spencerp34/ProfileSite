@@ -41,14 +41,14 @@ function Contact(){
                 <div className='b linkedIn'>
                      {/* <img src={linkedIn} alt='' /> */}
                     <h3>💼 LinkedIn:</h3>
-                    <a href="" target='_blank'>
+                    <a href="http://www.linkedin.com/in/spencerp34/" target='_blank'>
                         <h4>linkedin.com/in/spencerp34/</h4>
                     </a>        
                 </div>                   
                 <div className='b github'>
                     {/* <img src={github} alt='' /> */}
                     <h3>💻 GitHub:</h3>
-                    <a href="" target='_blank'>
+                    <a href="http://github.com/Spencerp34" target='_blank'>
                         <h4>github.com/Spencerp34</h4>
                     </a>
                 </div>

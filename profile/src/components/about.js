@@ -12,6 +12,7 @@ const AboutDiv = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         width: 70%;
     }
     
@@ -56,7 +57,7 @@ const AboutDiv = styled.div`
     #spensa,
     #wife
     {
-        width: 350px;
+        width: 100%;
         transform: scaleX(-1);
         border-radius: 15px;
     }
@@ -100,6 +101,58 @@ const AboutDiv = styled.div`
         background-image: url(${rootbeer});
     }
 
+    @media (max-width: 750px){
+        hr{
+            display: none;
+        }
+        .info{
+            flex-direction: column;
+        }
+        .tidbit{
+            width: 80%;
+            height: 15vh;
+            margin: 1%;
+        }
+        .left{
+            padding: 1%;
+        }
+        h5{
+            margin: none;
+        }
+    }
+
+    @media (max-width: 450px){
+        h3{
+            font-size: 1rem;
+        }
+        h4{
+            font-size: 0.9rem;
+        }
+        h5{
+            font-size: .8rem;
+        }
+        .organized{
+            flex-direction: column;
+        }
+        .image{
+            min-height: 10vh;
+        }
+        .organized p{
+            min-height: 8vh;
+            width: 80%;
+        }
+        #lambda{
+            margin-top: 2%;
+        }
+        .left{
+            height: 3vh;
+        }
+        .tidbit{
+            height: 15vh;
+            margin-top: 3vh;
+            margin-bottom: 2vh;
+        }
+    }
 `
 
 function About(){
@@ -117,7 +170,7 @@ function About(){
                     </div>
                     <div className='tidbit'>
                         <h3> Full Stack Web Developer </h3>
-                        <h5> Lambda School Alumni </h5>
+                        <h5 id='lambda'> Lambda School Alumni </h5>
                     </div>
                     <hr class="solid" />
                     <div className='tidbit'>

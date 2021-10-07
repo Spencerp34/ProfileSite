@@ -8,6 +8,8 @@ const Wrap = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 150px;
+    min-height: 80vh;
     a{
         display: block;
         text-decoration: none;
@@ -39,6 +41,23 @@ const Wrap = styled.div`
     }
     span{
         color: yellow;
+    }
+
+    @media (max-width: 850px){
+        .sites{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .website{
+            width: 80%;
+            margin-top: 10vh;
+            padding-bottom: 3vh;
+            margin-bottom: 5vh;
+        }
+        .construction{
+            margin-bottom: 5vh;
+        }
     }
 
 `

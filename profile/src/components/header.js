@@ -5,12 +5,13 @@ const Heading = styled.div`
   display: flex;
   justify-content: right;
   flex-direction: column;
-  margin-bottom: 5%;
+  margin-bottom: 5vh;
   .logo{
       text-decoration: none;
       color: black;
       font-size: 3rem;
   }
+
 `
 
 const HeadWrap = styled.div`
@@ -19,6 +20,12 @@ const HeadWrap = styled.div`
   justify-content: right;
   width: 95%;
   padding: 1%;
+
+  @media (max-width: 650px){
+    .logo{
+      font-size: 2rem;
+    }
+  }
 `
 
 const NavBar = styled.div`
@@ -37,6 +44,12 @@ const NavBar = styled.div`
     :hover{
       color: rgb(216, 73, 73);
       font-weight: bold;
+    }
+  }
+
+  @media (max-width: 650px){
+    .nav{
+      font-size: 1rem;
     }
   }
 `

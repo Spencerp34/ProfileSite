@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import phone from '../assets/phone.png'
-import email from '../assets/email.png'
-import github from '../assets/github.png'
-import linkedIn from '../assets/linkedIn.png'
+// import phone from '../assets/phone.png'
+// import email from '../assets/email.png'
+// import github from '../assets/github.png'
+// import linkedIn from '../assets/linkedIn.png'
 
 
 
@@ -15,11 +15,30 @@ const ContactDiv = styled.div`
     }
     .all{
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;       
         justify-content: space-between;
     }
     .b{
         width: 45%;
+    }
+
+    @media (max-width: 1350px){
+        .all{
+            flex-direction: column;
+            align-items: center;
+        }   
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .b{
+            width: 85%;
+        }
+        h4{
+            font-size: 1rem;
+        } 
     }
 `
 

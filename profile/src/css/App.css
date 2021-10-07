@@ -3,7 +3,9 @@
   background-image: linear-gradient(to bottom right, grey, grey, black);
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .margined{

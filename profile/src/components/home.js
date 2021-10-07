@@ -14,6 +14,9 @@ const Wrap = styled.div`
         color: black;
         max-height: 50vh;
     }
+    .info{
+        min-height: 25vh;
+    }
 
     .construction{
         border-bottom: solid 10px;
@@ -29,6 +32,7 @@ const Wrap = styled.div`
     }
     img{
         border-radius: 15px;
+        height: 30vh;
     }
     .website{
         width: 30%;
@@ -47,24 +51,31 @@ function Home(){
                 <h2>Click on any to open a new tab to check it out!</h2>
                 <br/>
                 <div className='sites' >
-                    <a href='https://pyramid-planet.vercel.app/' className='website' >
-                        <h3>Pyramid Planet</h3>
-                        <p> Check out this website to see: </p>
-                        <p> Interactive UI, Merchandise Store/Shopping Cart, Single Page Application.</p>
+                    <a  target="_blank" href='https://pyramid-planet.vercel.app/' className='website' >
+                        <div className='info'>
+                            <h3>Pyramid Planet</h3>
+                            <p> Check out this website to see: </p>
+                            <p> Interactive UI, Merchandise Store/Shopping Cart, Single Page Application.</p>
+                        </div>
+                        
                         <img src={pyramidPlanetImg} width='80%' alt='' />
                     </a>
-                    <a className='website'  >
-                        <div className='construction'>
-                            <h3>Midnight Snax <span>(under construction)</span></h3>
-                            <p> Check out this website to see: </p>
-                            <p> Brochure website to see everything a customer would need to know about your restaurant, catering/applying for a job, Single Page Application.</p>
-                        </div>
+                    <a target="_blank" className='website'  >
+                        <div className='info'>
+                            <div className='construction'>
+                                <h3>Midnight Snax <span>(under construction)</span></h3>
+                                <p> Check out this website to see: </p>
+                                <p> Brochure website to see everything a customer would need to know about your restaurant, catering/applying for a job, Single Page Application.</p>
+                            </div>
+                        </div>                        
                         <img src='https://media.giphy.com/media/fUYp0iOzQfC540KCs4/giphy.gif' height='50%'/>
                     </a>
-                    <a className='website' href='https://www.littleacornsschool.com/'>
-                        <h3>Little Acorns Pre-School</h3>
-                        <p> Check out this website to see: </p>
-                        <p> Photo galleries, form inquiries, little business.</p>
+                    <a target="_blank" className='website' href='https://little-acorns-spencerp34.vercel.app/'>
+                        <div className='info'>
+                            <h3>Little Acorns Pre-School</h3>
+                            <p> Check out this website to see: </p>
+                            <p> Photo galleries, form inquiries, little business.</p>
+                        </div>
                         <img src={littleAcorns} width='80%' alt='' />
                     </a>
                 </div>

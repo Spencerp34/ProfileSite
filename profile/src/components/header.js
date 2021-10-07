@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import styled from 'styled-components';
-import Menu from "./menu";
 
 const Heading = styled.div`
   display: flex;
@@ -19,6 +18,7 @@ const HeadWrap = styled.div`
   flex-direction: row;
   justify-content: right;
   width: 95%;
+  padding: 1%;
 `
 
 const NavBar = styled.div`
@@ -43,9 +43,10 @@ const NavBar = styled.div`
 
 function Header(){
     return(
+      <header>
         <Heading>
           <HeadWrap>
-              <Link className='logo' to='/'>Spensa.xyz</Link>
+              <Link className='logo' to='/'>SpencerPatterson.dev</Link>
           </HeadWrap>
           <NavBar>
             <Link className="nav" to='/'>Home</Link>
@@ -54,6 +55,8 @@ function Header(){
             <Link className="nav" to='/Contact'>Contact</Link>
           </NavBar>
         </Heading>
+      </header>
+        
     )
 }
 

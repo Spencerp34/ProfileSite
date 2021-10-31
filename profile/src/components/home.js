@@ -14,10 +14,10 @@ const Wrap = styled.div`
         display: block;
         text-decoration: none;
         color: black;
-        max-height: 50vh;
+        margin-bottom: 5vh;
     }
     .info{
-        min-height: 25vh;
+        min-height: 15vh;
     }
 
     .construction{
@@ -28,35 +28,29 @@ const Wrap = styled.div`
     .sites{
         width: 90%;
         display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
     }
     img{
+        height: 50vw;
         border-radius: 15px;
-        height: 30vh;
     }
     .website{
-        width: 30%;
+        width: 80%;
     }
     span{
         color: yellow;
     }
 
     @media (max-width: 850px){
-        .sites{
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
         .website{
             width: 80%;
             margin-top: 10vh;
-            padding-bottom: 3vh;
-            margin-bottom: 5vh;
         }
-        .construction{
-            margin-bottom: 5vh;
+        #comingSoon{
+            width: 50vw;
         }
     }
 
@@ -70,6 +64,14 @@ function Home(){
                 <h2>Click on any to open a new tab to check it out!</h2>
                 <br/>
                 <div className='sites' >
+                    <a target="_blank" className='website' href='https://little-acorns-spencerp34.vercel.app/'>
+                        <div className='info'>
+                            <h3>Little Acorns Pre-School</h3>
+                            <p> Check out this website to see: </p>
+                            <p> Photo galleries, form inquiries, little business.</p>
+                        </div>
+                        <img src={littleAcorns} width='80%' alt='' />
+                    </a>
                     <a  target="_blank" href='https://pyramid-planet.vercel.app/' className='website' >
                         <div className='info'>
                             <h3>Pyramid Planet</h3>
@@ -85,17 +87,9 @@ function Home(){
                                 <h3>Midnight Snax <span>(under construction)</span></h3>
                                 <p> Check out this website to see: </p>
                                 <p> Brochure website to see everything a customer would need to know about your restaurant, catering/applying for a job, Single Page Application.</p>
+                                <img src='https://media.giphy.com/media/fUYp0iOzQfC540KCs4/giphy.gif' id='comingSoon' alt='coming_soon' height='50%'/>
                             </div>
                         </div>                        
-                        <img src='https://media.giphy.com/media/fUYp0iOzQfC540KCs4/giphy.gif' height='50%'/>
-                    </a>
-                    <a target="_blank" className='website' href='https://little-acorns-spencerp34.vercel.app/'>
-                        <div className='info'>
-                            <h3>Little Acorns Pre-School</h3>
-                            <p> Check out this website to see: </p>
-                            <p> Photo galleries, form inquiries, little business.</p>
-                        </div>
-                        <img src={littleAcorns} width='80%' alt='' />
                     </a>
                 </div>
             </Wrap>

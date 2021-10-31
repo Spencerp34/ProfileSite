@@ -30,6 +30,7 @@ const AboutDiv = styled.div`
         align-items: center;
         justify-content: center;
         margin-bottom: 2vh;
+
     }
     
     h3{
@@ -110,7 +111,7 @@ const AboutDiv = styled.div`
         }
         .tidbit{
             width: 80%;
-            height: 15vh;
+            height: auto;
             margin: 1%;
         }
         .left{
@@ -148,7 +149,7 @@ const AboutDiv = styled.div`
             height: 3vh;
         }
         .tidbit{
-            height: 15vh;
+            height: auto;
             margin-top: 3vh;
             margin-bottom: 2vh;
         }

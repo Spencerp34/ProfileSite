@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import styled from 'styled-components';
 
 const Heading = styled.div`
@@ -9,7 +9,7 @@ const Heading = styled.div`
   .logo{
       text-decoration: none;
       color: black;
-      font-size: 3rem;
+      font-size: 4vw;
   }
 
 `
@@ -21,9 +21,9 @@ const HeadWrap = styled.div`
   width: 95%;
   padding: 1%;
 
-  @media (max-width: 650px){
+  @media (max-width: 450px){
     .logo{
-      font-size: 2rem;
+      font-size: 5vw;
     }
   }
 `
@@ -37,7 +37,7 @@ const NavBar = styled.div`
   .nav {
     margin-left: 5%;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 3vw;
     font-weight: bold;
     color: black;
     transition: .3s;
@@ -48,8 +48,12 @@ const NavBar = styled.div`
   }
 
   @media (max-width: 650px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .nav{
-      font-size: 1rem;
+      font-size: 4vw;
     }
   }
 `

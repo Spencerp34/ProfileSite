@@ -2,6 +2,7 @@ import styled from 'styled-components';
 // import Carousel from './carousel';
 import pyramidPlanetImg from '../assets/pyramid-merch.PNG'
 import littleAcorns from '../assets/littleAcorns.PNG'
+import midnightSnax from '../assets/midnightSnax.PNG'
 
 
 const Wrap = styled.div`
@@ -64,13 +65,22 @@ function Home(){
                 <h2>Click on any to open a new tab to check it out!</h2>
                 <br/>
                 <div className='sites' >
+                    <a target="_blank" className='website'  href='https://midnight-snax.vercel.app/Menu' >
+                        <div className='info'>
+                            <h3>Midnight Snax</h3>
+                            <p> Check out this website to see: </p>
+                            <p> Brochure website to see everything a customer would need to know about your restaurant, catering/applying for a job, Single Page Application.</p>
+                            <h5>Created using Node.js, TypeScript, and React</h5>
+                            <img src={midnightSnax} id='comingSoon' alt='coming_soon' width='90%' />
+                        </div>                        
+                    </a>
                     <a target="_blank" className='website' href='https://little-acorns-spencerp34.vercel.app/'>
                         <div className='info'>
                             <h3>Little Acorns Pre-School</h3>
                             <p> Check out this website to see: </p>
                             <p> Photo galleries, form inquiries, little business.</p>
                         </div>
-                        <img src={littleAcorns} width='80%' alt='' />
+                        <img src={littleAcorns} width='90%' alt='' />
                     </a>
                     <a  target="_blank" href='https://pyramid-planet.vercel.app/' className='website' >
                         <div className='info'>
@@ -79,14 +89,14 @@ function Home(){
                             <p> Interactive UI, Merchandise Store/Shopping Cart, Single Page Application.</p>
                         </div>
                         
-                        <img src={pyramidPlanetImg} width='80%' alt='' />
+                        <img src={pyramidPlanetImg} width='90%' alt='' />
                     </a>
                     <a target="_blank" className='website'  >
                         <div className='info'>
                             <div className='construction'>
-                                <h3>Midnight Snax <span>(under construction)</span></h3>
+                                <h3>Joystick Arcade <span>(under construction)</span></h3>
                                 <p> Check out this website to see: </p>
-                                <p> Brochure website to see everything a customer would need to know about your restaurant, catering/applying for a job, Single Page Application.</p>
+                                <p> A local arcade opening to the community. Built with Angular and TypeScript </p>
                                 <img src='https://media.giphy.com/media/fUYp0iOzQfC540KCs4/giphy.gif' id='comingSoon' alt='coming_soon' height='50%'/>
                             </div>
                         </div>                        
